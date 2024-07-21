@@ -1,0 +1,182 @@
+/* Base styles */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+}
+
+header {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    position: fixed; /* Make header fixed */
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensure header stays on top */
+}
+
+.logo {
+    font-size: 1.5em;
+    color:#00308F; /* Nice shade of green */
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    flex-grow: 1;
+
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+}
+
+.wrapper {
+    background: url(nick-morrison-FHnnjk1Yj7Y-unsplash.jpg) no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px; /* Adjust based on header height */
+}
+
+.hero {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+}
+
+.btn {
+    background-color: #00308F;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.section {
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #ddd;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container .text, .container .image {
+    flex: 1 1 45%;
+    margin: 10px;
+}
+
+.container .text {
+    text-align: left;
+}
+
+.container .image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+h2 {
+    color: #00308F;
+    margin-bottom: 20px;
+}
+
+.footer-content {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-top: 1px solid #ddd;
+}
+
+.footer-content a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.footer-content p {
+    margin: 10px 0 0;
+    font-size: 0.9em;
+}
+
+/* Mobile styles */
+@media (max-width: 600px) {
+    .logo {
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .hero-content h1 {
+        font-size: 2em;
+    }
+
+    .hero-content p {
+        font-size: 1em;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .container .text, .container .image {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+
+    .container .text {
+        text-align: center;
+    }
+
+    .section {
+        padding: 20px 10px;
+    }
+
+    .footer-content {
+        padding: 10px;
+    }
+}
